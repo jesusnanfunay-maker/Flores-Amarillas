@@ -73,18 +73,39 @@ body{
     color: #111;
 }
 
-@media screen and (max-width:574px){
+@media screen and (max-width:768px){
+    body{
+        height: 100vh;
+        padding: 20px;
+    }
     .greetings{
-        display: block;
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 800;
-        text-align: center;
+        gap: 0.5rem;
+        margin-bottom: 20px;
     }
     .description{
-        font-size: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        padding: 0 15px;
     }
     
     .button a{
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .greetings{
+        font-size: 1.5rem;
+        gap: 0.3rem;
+    }
+    .description{
         font-size: 1rem;
+    }
+    .button a{
+        font-size: 0.85rem;
+        padding: 7px 15px;
     }
 }
